@@ -15,33 +15,46 @@
     <title>Login page</title>
 </head>
 <body>
-    <aside id="aside">
-        <img src="/assets/undraw_About_us_page_re_2jfm 1.svg" alt="imagem-ilustrativa">
-    </aside>
-    <main id="container">
-        <span>
-            Bem-vindo de volta
+    <main class="login-main">
+
+        <aside class="login-left">
+            <img src="/assets/undraw_About_us_page_re_2jfm 1.svg" alt="imagem-ilustrativa">
+        </aside>
+        
+
+        <div class="login-right">               
+            <h5>Bem vindo de volta</h5>
             <h1>Faça login na sua conta</h1>
-        </span>
-        
-        <div class="entradas">
-            <label for="email">E-mail</label>
-            <input type="text" name="email" required>
+
+            <form class="login">
+                <div class="card-login">
+                    <div class="textfield">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" required placeholder="usuario@email.com">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" required placeholder="senha">
+                    </div>
+    
+                    <div class="group">
+                        <label class="lembrar-senha" for="lembre-senha">
+                            <input type="checkbox" name="lembre-senha" id="lembre-senha">Lembre de mim
+                        </label>
+                        <label for="esqueceu-senha">
+                            <a class="hyperLink" href="#">Esqueceu sua senha?</a>
+                        </label>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="submit" id="botao-entrar" class="btn btn-1">Entrar</button>
+                        <button id="botao-google" class="btn btn-2"><img src="/assets/iconfinder_Google_1298745 1.svg" alt="google-icon">Ou faça login com o Google</button>
+                    </div>
+
+                    <label class="last-label">Não tem uma conta?⠀<a class="hyperLink" href="">Cadastre-se</a></label>
+                </div>
+            </form>
         </div>
-
-        <div class="entradas">
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" required>
-        </div>
-
-        <label for="lembre-senha"><input type="checkbox" name="lembre-senha" id="lembre-senha">Lembre de mim</label>
-        
-        <label for="esqueceu-senha"><a href="#">Esqueceu sua senha?</a></label>
-
-        <button id="botao-entrar">Entrar</button>
-        <button id="botao-google"><img src="/assets/iconfinder_Google_1298745 1.svg" alt="google-icon">Ou faça login com o Google</button>
-
-        <label id="cadastre-se">Não tem uma conta? <a href="">Cadastre-se</a></label>
 
     </main>
 </body>
