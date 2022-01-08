@@ -122,12 +122,12 @@ body .login-main .login-right .login .card-login .btn-group .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
   height: 50px;
   width: 374px;
@@ -136,14 +136,24 @@ body .login-main .login-right .login .card-login .btn-group .btn {
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 body .login-main .login-right .login .card-login .btn-group .btn-1 {
   background-color: #04c35c;
 }
 
+body .login-main .login-right .login .card-login .btn-group .btn-1:hover {
+  background-color: #039144;
+}
+
 body .login-main .login-right .login .card-login .btn-group .btn-2 {
   background-color: #1a202c;
+}
+
+body .login-main .login-right .login .card-login .btn-group .btn-2:hover {
+  background-color: #07090c;
 }
 
 body .login-main .login-right .login .card-login .last-label {

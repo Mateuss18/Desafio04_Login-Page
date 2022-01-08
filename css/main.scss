@@ -6,6 +6,18 @@ $white: #ffffff;
 $white-200: #f7fafc;
 $gray: #1a202c;
 
+@mixin flexCenter($aling: false, $justify: true) {
+    display: flex;
+    @if $aling {
+        align-items: center;
+    } @else if $justify {
+        justify-content: center;
+    } @else {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -13,15 +25,13 @@ body {
     font-family: "Merriweather";
 
     .login-main {
-        display: flex;
-        align-items: center;
+        @include flexCenter($aling: true);
         gap: 5vw;
         width: 100%;
         min-height: 100vh;
 
         .login-left {
-            display: flex;
-            justify-content: center;
+            @include flexCenter($justify: true);
             flex: 1;
             background-color: $white-200;
             height: 100vh;
@@ -74,31 +84,29 @@ body {
                         }
                     }
 
-                    .group{
-                        display: flex;                        
+                    .group {
+                        display: flex;
                         gap: 83px;
                         font-size: 14px;
                         padding-top: 28px;
                         padding-bottom: 26px;
 
-                        .lembrar-senha{
+                        .lembrar-senha {
                             cursor: pointer;
                         }
 
-                        .lembrar-senha input{
+                        .lembrar-senha input {
                             margin-right: 11px;
                         }
                     }
 
-                    .btn-group{
+                    .btn-group {
                         display: flex;
                         gap: 15px;
                         flex-direction: column;
 
-                        .btn{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
+                        .btn {
+                            @include flexCenter($aling: false, $justify: false);
                             gap: 10px;
                             height: 50px;
                             width: 374px;
@@ -107,23 +115,31 @@ body {
                             color: $white;
                             font-size: 16px;
                             cursor: pointer;
+                            transition: 0.4s;
                         }
 
-                        .btn-1{
+                        .btn-1 {
                             background-color: $green-light;
+
+                            &:hover {
+                                background-color: darken($green-light, 10%);
+                            }
                         }
-                        .btn-2{
+                        .btn-2 {
                             background-color: $gray;
+
+                            &:hover {
+                                background-color: darken($gray, 10%);
+                            }
                         }
                     }
-                    
-                    .last-label{
-                        display: flex;
-                        justify-content: center;
+
+                    .last-label {
+                        @include flexCenter($justify: true);
                         margin-top: 40px;
                     }
 
-                    .hyperLink{
+                    .hyperLink {
                         text-decoration: none;
                         color: $purple-light;
                     }
