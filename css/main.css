@@ -1,0 +1,163 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Merriweather";
+}
+
+body .login-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5vw;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body .login-main .login-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #f7fafc;
+  height: 100vh;
+}
+
+body .login-main .login-left img {
+  padding: 0 2vw;
+  width: 400px;
+  height: auto;
+}
+
+body .login-main .login-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .login-main .login-right h5 {
+  font-size: 16px;
+  margin: 0 0 7px 0;
+}
+
+body .login-main .login-right h1 {
+  font-size: 26px;
+  margin: 0 0 28px 0;
+}
+
+body .login-main .login-right .login {
+  font-family: "Poppins";
+  max-width: 377px;
+}
+
+body .login-main .login-right .login .card-login {
+  margin-bottom: 28px;
+}
+
+body .login-main .login-right .login .card-login .textfield {
+  margin-top: 11px;
+}
+
+body .login-main .login-right .login .card-login .textfield label {
+  display: block;
+  margin-bottom: 11px;
+}
+
+body .login-main .login-right .login .card-login .textfield input {
+  border: 1px solid #e8e8e8;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 50px;
+  width: 350px;
+  padding-left: 20px;
+}
+
+body .login-main .login-right .login .card-login .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 83px;
+  font-size: 14px;
+  padding-top: 28px;
+  padding-bottom: 26px;
+}
+
+body .login-main .login-right .login .card-login .group .lembrar-senha {
+  cursor: pointer;
+}
+
+body .login-main .login-right .login .card-login .group .lembrar-senha input {
+  margin-right: 11px;
+}
+
+body .login-main .login-right .login .card-login .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .login-main .login-right .login .card-login .btn-group .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  height: 50px;
+  width: 374px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body .login-main .login-right .login .card-login .btn-group .btn-1 {
+  background-color: #04c35c;
+}
+
+body .login-main .login-right .login .card-login .btn-group .btn-2 {
+  background-color: #1a202c;
+}
+
+body .login-main .login-right .login .card-login .last-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+body .login-main .login-right .login .card-login .hyperLink {
+  text-decoration: none;
+  color: #2b6cbd;
+}
+/*# sourceMappingURL=main.css.map */
