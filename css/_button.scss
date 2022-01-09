@@ -1,0 +1,33 @@
+.btn-group {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+
+    .btn {
+        @include flexCenter($aling: false, $justify: false);
+        gap: 10px;
+        height: 50px;
+        width: 374px;
+        border: none;
+        border-radius: 5px;
+        color: $white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .btn-1 {
+        background-color: $green-light;
+
+        &:hover {
+            background-color: darken($green-light, 10%);
+        }
+    }
+    .btn-2 {
+        background-color: $gray;
+
+        &:hover {
+            background-color: darken($gray, 10%);
+        }
+    }
+}
