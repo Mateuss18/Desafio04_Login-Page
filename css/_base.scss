@@ -1,0 +1,33 @@
+//Cores
+$green-light: #04c35c;
+$purple-light: #2b6cbd;
+
+$white: #ffffff;
+$white-200: #f7fafc;
+$gray: #1a202c;
+
+@mixin flexCenter($aling: false, $justify: true) {
+    display: flex;
+    @if $aling {
+        align-items: center;
+    } @else if $justify {
+        justify-content: center;
+    } @else {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather";
+
+    .login-main {
+        @include flexCenter($aling: true);
+        gap: 5vw;
+        width: 100%;
+        min-height: 100vh;
+    }
+}
