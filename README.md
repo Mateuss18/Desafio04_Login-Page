@@ -24,7 +24,9 @@
 
 ### **Desafio 04 - Login Page** <a name="id01"></a>
 
-<img src="assets/desktop.gif" alt="">
+<img src="assets/img_readme.png" alt="">
+
+<img src="assets/GIF_demonstrativo.gif" alt="">
 
 Link do desafio no Figma: [Clique aqui](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codelândia?node-id=4588%3A37)
 
@@ -39,8 +41,6 @@ Link do desafio no Figma: [Clique aqui](https://www.figma.com/file/Yb9IBH56g7T1h
 ![](https://github.com/JoshDanielWalker/Tech-SVG-Icons/blob/master/html-5.svg)
 
 ![](https://github.com/JoshDanielWalker/Tech-SVG-Icons/blob/master/sass.svg)
-
-![](https://github.com/JoshDanielWalker/Tech-SVG-Icons/blob/master/javascript.svg)
 </div>
 
 >
